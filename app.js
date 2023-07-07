@@ -1,30 +1,3 @@
-// const express=require("express");
-// const https=require("https");
-// const app=express();
-// app.get("/",function(req,res){
-//     // res.send("Server is up and running.");
-//     const query="London";
-//     const url="https://api.openweathermap.org/data/2.5/weather?lat=29.3732&lon=78.1351&appid=${appid}&units=metric";
-//     https.get(url,function(response){
-//         console.log(response.statusCode);
-//         response.on("data",function(data){
-//             // console.log(data);
-//             const wdata=JSON.parse(data)
-//             // console.log(wdata)
-//             const temp=wdata.main.temp;
-//             const place=wdata.name;
-//             res.write("<p>The location is: "+place+"</p>");
-//             const iconurl=" http://openweathermap.org/img/wn/"+wdata.weather[0].icon+"@2x.png";
-//             res.write("<img src="+iconurl+">")
-//             res.write("<h1>The temperature in the given location is: "+temp+"</h1>")
-//             res.send();
-//             // console.log("The Temperature at: "+place+" is: "+temp);
-//         })
-//     })
-// })
-// app.listen(3000,function(){
-//     console.log("Server is running on port 3000");
-// })
 const wrapper = document.querySelector(".wrapper"),
 inputPart = document.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
